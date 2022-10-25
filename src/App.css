@@ -1,0 +1,32 @@
+input,
+textarea,
+select {
+    text-decoration: none !important;
+    outline: 0 !important;
+    border-radius: 50px !important;
+    box-shadow: none !important;
+}
+
+.btn,
+.btn-close {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #6c757d !important;
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.list-group-item {
+    border-radius: 50px !important;
+}
+
+.card {
+    border-radius: 50px !important;
+}
