@@ -1,12 +1,27 @@
-import React from 'react'
-import TopAnimaeList from './topAnimaeList'
+import React from 'react';
 
-const LeftSidebar = () => {
+const LeftSidebar = ({ topAnime }) => {
+
+  const style = {
+    cursor: 'pointer'
+  }
+
   return (
-      <div className='float-start mx-3 my-5'>
-          <TopAnimaeList/>
-    </div>
+    <>
+      <h4>Top 5 Anime</h4>
+      <ul style={style} className='list-group mt-3 mb-5'>
+        {topAnime.map(anime => (
+          <a
+            href={anime.url}
+            target='_blank'
+            key={anime.mal_id}
+            className='list-group-item list-group-item-primary rounded mb-3'>
+            {anime.title_english}
+          </a>
+        ))}
+      </ul>
+    </>
   )
 }
 
-export default LeftSidebar
+export default LeftSidebar;
