@@ -3,7 +3,11 @@ textarea,
 select {
     text-decoration: none !important;
     outline: 0 !important;
-    border-radius: 50px !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    /* border-radius: 50px !important; */
     box-shadow: none !important;
 }
 
@@ -12,6 +16,13 @@ select {
     text-decoration: none !important;
     outline: 0 !important;
     box-shadow: none !important;
+}
+
+.search-button {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
 }
 
 input:focus,
@@ -28,5 +39,6 @@ select:focus {
 }
 
 .card {
-    border-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
 }
