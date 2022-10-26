@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+
+.animae-font {
+    font-family: 'Cinzel Decorative', cursive !important;
+}
+
 input,
 textarea,
 select {
