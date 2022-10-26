@@ -44,7 +44,6 @@ select:focus {
     border-radius: 50px !important;
 }
 
-.card {
-    border-bottom-left-radius: 50px !important;
-    border-bottom-right-radius: 50px !important;
+.img-thumbnail {
+    height: 300px !important;
 }
