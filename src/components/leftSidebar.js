@@ -15,6 +15,7 @@ const LeftSidebar = ({ topAnime }) => {
           <a
             href={anime.url}
             target='_blank'
+            rel="noreferrer"
             key={anime.mal_id}
             className='list-group-item list-group-item-primary rounded mb-3'>
             {anime.title_english}
