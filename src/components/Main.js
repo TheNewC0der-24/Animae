@@ -36,6 +36,7 @@ const Main = () => {
         title: item.title_english,
         body: item.synopsis,
         url: item.url,
+        rating: item.rating
       };
     })
     setAnimeData(data);
@@ -44,10 +45,14 @@ const Main = () => {
   return (
     <>
       <Header />
-      <div className='mx-5 mt-5'>
-        <div className="row">
-          <div className="col-md-3 bg-light h-50 p-3 mb-5">
-            <LeftSidebar topAnime={topAnime} />
+      <div className='mx-5'>
+        <div className="row my-5">
+          <div className="col-md-3">
+            <div className="card bg-light border-0">
+              <div className="card-body">
+                <LeftSidebar topAnime={topAnime} />
+              </div>
+            </div>
           </div>
           <div className="col-md-9">
             <Search
@@ -55,7 +60,7 @@ const Main = () => {
               searchAnime={searchAnime}
               setSearchAnime={setSearchAnime}
             />
-            <hr />
+            <hr className='mb-4' />
             <Results
               animeData={animeData}
             />
