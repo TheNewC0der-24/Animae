@@ -9,7 +9,8 @@ const LeftSidebar = ({ topAnime }) => {
   return (
     <>
       <h4>Top 5 Anime</h4>
-      <ul style={style} className='list-group mt-3 mb-5'>
+      <hr />
+      <ul style={style} className='list-group'>
         {topAnime.map(anime => (
           <a
             href={anime.url}
